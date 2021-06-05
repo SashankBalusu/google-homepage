@@ -8,7 +8,9 @@
     }
     #search{
         display:block;
-        margin:auto;
+        margin-right:auto;
+        margin-left:auto;
+        margin-top:20px;
         border-radius: 50px 50px 50px 50px;
         border-color:#dfe1e5;
         border-style: solid;
@@ -17,8 +19,48 @@
 
 
     }
+    #searchicon {
+        color:9aa0a6;
+        filter:grayscale(40%);
+    }
     #search:hover{
         box-shadow: 0 0 4px rgba(32,33,36,.28);
+    }
+    .toprightnav {
+        position:relative;
+        bottom:28em;
+        color:black;
+        font-family: Arial, sans-serif;
+        float:right;
+        text-decoration: none;
+        margin-right:20px;
+
+        
+
+    }
+    .topleftnav{
+        position:relative;
+        bottom:28em;
+        color:black;
+        font-family: Arial, sans-serif;
+        float:left;
+        text-decoration: none;
+        margin-right:20px;
+
+        
+
+    }
+    a:hover {
+        text-decoration: underline;
+    }
+    #apps{
+        margin-top:-4px;
+        padding:3px;
+
+    }
+    #apps:hover{
+        border-radius:50%;
+        background-color:dfe1e5;
     }
 </style>
 <!DOCTYPE html>
@@ -28,12 +70,26 @@
     </head>
     <body>
         <div>
-            <img id ="logo" src = "/googlelogo_color_272x92dp.png">
+            <div>
+                <img id = "searchicon" src = "/outline_search_black_24dp.png">
+                <img id ="logo" src = "/googlelogo_color_272x92dp.png">
             <form>
                 <input type = "search" name = "search" id = "search"></input>
 
             </form>
+            </div>
+            
+            <div>
+                <a class = "toprightnav" href = "#" id = "apps"><img id = "apps" src = "outline_apps_black_24dp.png"></a>
+                <a class = "toprightnav" href = "#" >Images</a>
+                <a class = "toprightnav" href = "#" >Gmail</a>
 
+            </div>
+            <div>
+                <a class = "topleftnav" href = "#">About</a>
+                <a class = "topleftnav" href = "#">Store</a>
+            </div>
+            
         </div>    
         
     </body>
