@@ -1,9 +1,12 @@
 <style>
+    body {
+        font-family: Arial, sans-serif;
+    }
     #logo {
         display:block;
         margin-left:auto;
         margin-right:auto;
-        margin-top:20%;
+        margin-top:15%;
         
     }
     #search{
@@ -28,9 +31,9 @@
     }
     .toprightnav {
         position:relative;
-        bottom:28em;
+        bottom: 24em;
         color:black;
-        font-family: Arial, sans-serif;
+        
         float:right;
         text-decoration: none;
         margin-right:20px;
@@ -40,7 +43,7 @@
     }
     .topleftnav{
         position:relative;
-        bottom:28em;
+        bottom:24em;
         color:black;
         font-family: Arial, sans-serif;
         float:left;
@@ -48,6 +51,14 @@
         margin-right:20px;
 
         
+
+    }
+    #searchicon {
+        position:relative;
+        width:20px;
+        height:20px;
+        left:363px;
+        top:338px;
 
     }
     a:hover {
@@ -60,7 +71,52 @@
     }
     #apps:hover{
         border-radius:50%;
-        background-color:dfe1e5;
+        background-color:#dfe1e5;
+    }
+    #about {
+        margin-left:20px;
+
+    }
+    /*button {
+        display:flex;
+        justify-self: center;
+               
+        
+    }*/
+    #box-container {
+        display:flex;
+        justify-content:center;
+        
+    }
+    #box1 {
+        background-color:#eeeeee;
+        border:none;
+        margin-right:5px;
+        border-radius: 2px;
+        height:30px;
+        width:120px;
+    }
+    #box2 {
+        background-color:#eeeeee;
+        border:none;
+        margin-left:5px;
+        border-radius: 2px;
+        height:30px;
+        width:120px;
+
+
+    }
+    #box1:hover{
+        border:solid;
+        border-width: 1px;
+        border-color:gray;
+        
+    }
+    #box2:hover{
+        border:solid;
+        border-width: 1px;
+        border-color:gray;
+        
     }
 </style>
 <!DOCTYPE html>
@@ -77,6 +133,11 @@
                 <input type = "search" name = "search" id = "search"></input>
 
             </form>
+                <div id=box-container>
+                    <button id = "box1">Google Search</button>
+                    <button id = "box2">I'm Feeling Lucky</button> 
+                </div>
+                
             </div>
             
             <div>
@@ -86,8 +147,8 @@
 
             </div>
             <div>
-                <a class = "topleftnav" href = "#">About</a>
-                <a class = "topleftnav" href = "#">Store</a>
+                <a class = "topleftnav" href = "#" id = "about">About</a>
+                <a class = "topleftnav" href = "#" id = "store">Store</a>
             </div>
             
         </div>    
